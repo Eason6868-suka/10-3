@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+
+<!-- 定義 HTML 文檔的開始 -->
+<html lang="zh-Hant">
+
+<!-- 包含文檔的元數據 -->
+    <header>
+        <nav> <!-- 導覽列，放網頁的選單連結 -->
+            <a href="index.html">首頁</a> <!-- 返回首頁 -->
+            <a href="about.html">關於我們</a> <!-- 本頁 -->
+            <a href="contact.html">聯絡我們</a> <!-- 跳轉到聯絡我們 -->
+            <a href="introduction.html">自我介紹</a> <!-- 本頁 -->
+        </nav>
+    </header>
+
+<!-- 包含文檔的主要內容 -->
+<body>
+    <header>
+        <h1>你好，我是 潘世霖</h1>
+        <p><strong>就讀學校：</strong>淡江大學</p> <!-- 使用 <p> 來定義段落，使用 <strong> 標籤來加粗文字 -->
+        <p><strong>科系：</strong>資訊管理學系</p>
+    </header>
+
+    <main>
+        <!-- 文字介紹 -->
+        <section>
+            <h2>關於我</h2>
+            <p>我是一個熱愛學習新技術的學生，平時喜歡 <em>打籃球</em>、<em>跑步</em> 和 <em>聽音樂</em>。</p> <!-- 使用 <em> 標籤來強調文字（斜體） -->
+        </section>
+
+        <!-- 影片 -->
+        <section>
+            <h2>影片</h2>
+            <video controls muted autoplay src="PHOTO/vid2.mp4" width="320" height="240"><!-- 不知道為甚麼跑不出來 哭哭...! -->
+        </section>
+
+        <!-- 超連結 -->
+        <section>
+            <h2>我的社群</h2>
+            
+            <!-- 無序列表 -->
+            <ul>
+                <li><a href="https://www.instagram.com/pzl_.18?igsh=MW9penZjamMxYXV5Nw==" target="_blank">Instagram</a></li> <!-- 使用使用 <a> 定義超連結，target="_blank" 在新標籤頁打開連結 -->
+                <li><a href="https://github.com/Eason6868-suka">GitHub</a></li> <!-- 省略 target 屬性，預設在同一標籤頁打開連結 -->
+            </ul>
+        </section>
+
+        <!-- 表格 -->
+        <section>
+            <h2>我的課表</h2>
+            <table border="1"> <!-- 使用 border 屬性來添加邊框，數字代表寬度 -->
+                <tr>
+                    <th>時間</th> <!-- 使用 <th> 定義表頭單元格（粗體） -->
+                    <th>星期一</th>
+                    <th>星期二</th>
+                </tr>
+                <tr>
+                    <td>早上</td>  <!-- 使用 <td> 定義表格數據單元格（一般字體） -->
+                    <td>資管概論</td>
+                    <td>HTML/CSS</td>
+                </tr>
+                <tr>
+                    <td>下午</td>
+                    <td>排球課</td>
+                    <td>專題討論</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- 表單 -->
+        <section>
+            <h2>聯絡我</h2>
+            <form>
+                <label for="name">姓名：</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">電子郵件：</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="message">留言：</label><br>
+                <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+                <button type="submit">送出</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 潘世霖的自我介紹頁</p>
+    </footer>
+</body>
+
+</html>
