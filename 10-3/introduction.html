@@ -3,7 +3,11 @@
 
 <!-- 定義 HTML 文檔的開始 -->
 <html lang="zh-Hant">
-
+<head>
+    <meta charset="UTF-8"> <!-- 設定網頁的編碼方式為 UTF-8，支援中文 -->
+    <title>潘世霖 - 首頁</title> <!-- 顯示在瀏覽器分頁的標題 -->
+    <link rel="stylesheet" href="style.css"> <!-- 引入外部的 CSS 樣式檔 -->
+</head>
 <!-- 包含文檔的元數據 -->
     <header>
         <nav> <!-- 導覽列，放網頁的選單連結 -->
@@ -23,8 +27,15 @@
     </header>
 
     <main>
+        <section>
+           
+        </section>
         <!-- 文字介紹 -->
         <section>
+            <h1>你好，我是 潘世霖</h1>
+            <p><strong>就讀學校：</strong>淡江大學</p> <!-- 使用 <p> 來定義段落，使用 <strong> 標籤來加粗文字 -->
+            <p><strong>科系：</strong>資訊管理學系</p>
+            
             <h2>關於我</h2>
             <p>我是一個熱愛學習新技術的學生，平時喜歡 <em>打籃球</em>、<em>跑步</em> 和 <em>聽音樂</em>。</p> <!-- 使用 <em> 標籤來強調文字（斜體） -->
         </section>
@@ -32,8 +43,11 @@
         <!-- 影片 -->
         <section>
             <h2>影片</h2>
-            <video controls muted autoplay src="PHOTO/vid2.mp4" width="320" height="240"><!-- 不知道為甚麼跑不出來 哭哭...! -->
-        </section>
+            <video id="vid" controls muted autoplay src="PHOTO/vid (1).mp4" width="320" height="240"><!-- 不知道為甚麼跑不出來 哭哭...!23:59 !!!!!終於搞出來了02:53 最後發現是檔案太大?! 真奇葩(自學成功)-->
+        <div class="videobg">
+		<video id="vid" src="/var/file/0/1000/mobilehomepage/6/image/demo.mp4" autoplay loop muted playsinline></video>
+	</div>
+            </section>
 
         <!-- 超連結 -->
         <section>
@@ -87,7 +101,7 @@
     </main>
 
     <footer>
-        <p>© 2025 潘世霖的自我介紹頁</p>
+        <p>© 2025 王OO Company. All rights reserved.</p>
     </footer>
 </body>
 
